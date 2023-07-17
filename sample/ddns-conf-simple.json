@@ -1,0 +1,36 @@
+{
+  "AccessKeyId": "Your Access Key ID",
+  "AccessKeySecret": "Your Access Key Secret",
+  "DomainName": "mydomain.com",
+  "LogFile": "/var/log/aliddns/aliddns.log",
+  "LogLevel": "info",
+  "CheckInterval": 10,
+  "RetryInterval": 10,
+  "DomainList": [
+    {
+      "AccessKeyId": "Your Access Key ID",
+      "AccessKeySecret": "Your Access Key Secret",
+      "DomainName": "mydomain.com",
+      "RR": "gw",
+      "Type": "AAAA",
+      "Network": "::1/64",
+      "TTL": 600
+    },
+    {
+      "DomainName": "mydomain.com",
+      "RR": "gw",
+      "Type": "A"
+    },
+    {
+      "DomainName": "mydomain.com",
+      "RR": "@",
+      "Type": "AAAA",
+      "Network": "::aabb:ccdd:eeff:1122/64"
+    },
+    {
+      "DomainName": "mydomain.com",
+      "RR": "@",
+      "Type": "A"
+    }
+  ]
+}
